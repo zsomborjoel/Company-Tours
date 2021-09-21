@@ -1,6 +1,6 @@
 # Company Tours
 
-##How to run the application
+## How to run the application
 
 1.	Please go into the package folder „company-tours”
 2.	Run build: mvn clean package spring-boot:repackage
@@ -11,9 +11,9 @@
 2.	Run tests: mvn test
       Additional curl requests while running the app:
       
-###Refresh:
+### Refresh:
       
-####refresh all
+#### refresh all
 ```
 curl --request POST \
 --url http://localhost:8081/tours/refresh \
@@ -23,7 +23,7 @@ curl --request POST \
 --data '{"filter": null}'
 ```
 
-####refresh filtered
+#### refresh filtered
 ```
 curl --request POST \
 --url http://localhost:8081/tours/refresh \
@@ -33,23 +33,23 @@ curl --request POST \
 --data '{"filter": "history"}'
 ```
 
-###Query:
+### Query:
 
-####query all
+#### query all
 ```
 curl --request GET \
 -u john:john12 \
 http://localhost:8081/tours
 ```
 
-####query filtered
+#### query filtered
 ```
 curl --request GET \
 -u john:john12 \
 http://localhost:8081/tours?filter=Cheers%20in%20the%20Liget
 ```
 
-##How to run code coverage mesausrement
+## How to run code coverage mesausrement
 
 1.	After building the app
 2.	Go into target folder under app
